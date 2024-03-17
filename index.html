@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="flex items-center justify-between bg-gray-950 text-black py-3 px-4 fixed top-0 z-0 w-full">
+    <div class="flex-items-center">
+      <div class="w-24">
+        <img src="white.svg" class="w-full">
+      </div>
+    </div>
+    <div class="flex items-center space-x-6">
+      <a href="#" class="text-white hover:text-blue-800">Overview</a>
+      <a href="#" class="text-white hover:text-blue-800">Docs</a>
+      <a href="#" class="text-white hover:text-blue-800">Community</a>
+      <a href="#" class="text-white hover:text-blue-800">Try Dart</a>
+      <a href="#" class="text-white hover:text-blue-800">Get Dart</a>
+      <span class="text-white">
+        <i class="bi bi-search"></i>
+      </span>
+    </div>
+  </div>
+  <div class="bg-gray-900 text-center p-4 pt-16">
+    <p class="text-white">Dart 3 is here with <span class="text-blue-500">records , patterns</span> and <span
+        class="text-blue-500">class modifiers.</span></p>
+    <p><span class="text-blue-500">Check out the blog post!</span></p>
+  </div>
+  <div class="flex">
+    <video src="https://dart.dev/assets/dash/video/hotreload.webm" autoplay muted controls></video>
+  </div>
+  <div class="flex bg-gray-900 p-16 flex-col items-center justify-center">
+    <p class="text-white text-2xl font-bold mb-4 text-center">Dart is a client-optimized language for fast apps on any
+      platform</p>
+    <div class="flex items-center">
+      <span class="text-blue-500">
+        <i class="bi bi-play-circle-fill"></i>
+      </span>
+      <p class="text-blue-500 hover:bg-blue-900">Watch Video</p>
+    </div>
+    <div class="flex items-center mb-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white mr-2" fill="none" viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+      </svg>
+      <p class="text-white">Supported by Google</p>
+    </div>
+    <div class="flex items-center">
+      <p class="text-white">Dart is free and open source</p>
+      <i class="bi bi-github px-1 hover:bg-white"></i>
+    </div>
+  </div>
+  <div class="flex justify-center bg-gray-800">
+    <div class="grid grid-cols-3 gap-4 mt-6">
+      <div class="flex-1">
+        <img src="https://dart.dev/assets/dash/2x/multiplatform-performance-light-op1.png" class="mx-auto">
+        <p class="text-white text-center font-bold mt-2">Optimized for UI</p>
+        <p class="text-gray-500 text-center">Develop with a programming language<br> specialized around the needs of
+          user<br> interface creation</p>
+      </div>
+      <div class="flex-1">
+        <img src="https://dart.dev/assets/dash/2x/client-optimized-light-op1.png" class="mx-auto">
+        <p class="text-white text-center font-bold mt-2">Productive
+          development</p>
+        <p class="text-gray-500 text-center">Make changes iteratively: use hot reload to see the result instantly in
+          your running app</p>
+      </div>
+      <div class="flex-1">
+        <img src="https://dart.dev/assets/dash/2x/productive-dev-light-op1.png" class="mx-auto">
+        <p class="text-white text-center font-bold mt-2">Fast on all
+          platforms</p>
+        <p class="text-gray-500 text-center">Compile to ARM & x64 machine code for mobile, desktop, and backend. Or
+          compile to JavaScript for the web</p>
+      </div>
+    </div>
+  </div>
+  <div class="flex bg-gray-800">
+    <div class="w-1/3 items-center bg-white text-center flex flex-col justify-center">
+      <img src="https://dart.dev/assets/dash/2x/multiplatform-performance-light-op1.png" alt="Image"
+        class="mb-4 mx-auto w-1/4 ml-12">
+      <p class="font-bold text-2xl">Optimized for UI</p>
+      <p>
+        <i class="bi bi-dot"></i>
+        Mature and complete <u class="text-cyan-500">async-await for</u> user interfaces containing event-driven code,
+        paired with isolate-based
+        <u class="text-blue-700"> concurrency.</u>
+      </p>
+      <p>
+        <i class="bi bi-dot"></i>
+        A <u class="text-cyan-500">programming language</u> optimized for building user interfaces with features such as
+        sound null safety, the
+        spread operator for expanding collections, and collection if for <u class="text-blue-500">customizing UI</u> for
+        each platform.
+      </p>
+    </div>
+    <div class="w-1/2">
+      <img src="https://dart.dev/assets/dash/svg/1-1-async-await.svg" alt="Image 2" class="w-full mb-2">
+    </div>
+  </div>
+
+  <div class="flex bg-gray-800">
+    <div class="w-1/2">
+      <img src="https://dart.dev/assets/dash/svg/2-3-runtime-insight.svg" alt="Image 2" class="w-full mb-2">
+    </div>
+    <div class="w-1/2 items-center bg-white text-center flex flex-col justify-center">
+      <img src="https://dart.dev/assets/dash/2x/client-optimized-light-op1.png" alt="Image"
+        class="mb-4 mx-auto w-1/4 ml-12">
+      <p class="font-bold text-2xl">Productive development</p>
+      <p>
+        <i class="bi bi-dot"></i>
+        Mature and complete <u class="text-cyan-500">async-await for</u> user interfaces containing event-driven code,
+        paired with isolate-based
+        <u class="text-blue-700"> concurrency.</u>
+      </p>
+      <p>
+        <i class="bi bi-dot"></i>
+        A <u class="text-cyan-500">programming language</u> optimized for building user interfaces with features such as
+        sound null safety, the
+        spread operator for expanding collections, and collection if for <u class="text-blue-500">customizing UI</u> for
+        each platform.
+      </p>
+    </div>
+  </div>
+
+  <div class="flex bg-gray-800">
+    <div class="w-1/3 items-center bg-white text-center flex flex-col justify-center">
+      <img src="https://dart.dev/assets/dash/2x/multiplatform-performance-light-op1.png" alt="Image"
+        class="mb-4 mx-auto w-1/4 ml-12">
+      <p class="font-bold text-2xl">Fast on all platforms</p>
+      <p>
+        <i class="bi bi-dot"></i>
+        Mature and complete <u class="text-cyan-500">async-await for</u> user interfaces containing event-driven code,
+        paired with isolate-based
+        <u class="text-blue-700"> concurrency.</u>
+      </p>
+      <p>
+        <i class="bi bi-dot"></i>
+        A <u class="text-cyan-500">programming language</u> optimized for building user interfaces with features such as
+        sound null safety, the
+        spread operator for expanding collections, and collection if for <u class="text-blue-500">customizing UI</u> for
+        each platform.
+      </p>
+    </div>
+    <div class="w-1/2">
+      <img src="https://dart.dev/assets/dash/svg/3-1-aot-compile.svg" alt="Image 2" class="w-full mb-2">
+    </div>
+  </div>
+  <div class="flex items-center justify-center bg-gray-800 min-h-screen">
+    <div class="flex flex-col items-center mb-36">
+      <p class="text-white text-4xl font-bold mb-4">Try Dart in your browser</p>
+      <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Hello World
+      </button>
+
+      <div style="width: 1000px; height: 300px;" class="bg-gray-600 mt-4">
+        <div class="flex items-center justify-between px-4 py-2">
+          <p class="text-white font-bold text-xl">Dart</p>
+          <div>
+            <a href="#" class="text-white mx-2">Install SDK</a>
+            <a href="#" class="text-white mx-2">Format</a>
+            <a href="#" class="text-white mx-2">Reset</a>
+            <button class="bg-cyan-600 hover:bg-blue-700 text-black font-bold py-2 px-2 rounded"> <i
+                class="bi bi-play-fill"></i>RUN</button>
+            <i class="bi bi-three-dots-vertical"></i>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="bg-gray-200 p-4 w-full">
+            <h2>1. Void <span class="text-cyan-600"> main</span>() {<br>
+              2.<span class="text-cyan-600"> Print></span>("Hello World")<br>
+              3.}
+            </h2>
+          </div>
+          <div class="bg-gray-200 p-4 w-full">
+            <h1> Console</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center justify-between bg-gray-950 text-black p-4">
+    <div class="flex-items-center">
+      <div class="w-24">
+        <img src="white.svg" class="w-full">
+      </div>
+    </div>
+    <div class="flex items-center space-x-6">
+      <a href="#" class="text-white hover:text-blue-800"><i class="bi bi-skip-forward-circle-fill"></i></a>
+      <a href="#" class="text-white hover:text-blue-800"><i class="bi bi-github"></i></a>
+      <a href="#" class="text-white hover:text-blue-800"><i class="bi bi-twitter"></i></a>
+    </div>
+  </div>
+  <div class="bg-gray-950 py-4">
+    <hr class="border-white">
+    <br>
+    <div class="flex justify-between items-center">
+      <p class="text-white">Except as otherwise noted, this site is licensed under a Creative Commons Attribution 4.0 International
+        License, and<br> code samples are licensed under the 3-Clause BSD License.</p>
+      <div class="flex space-x-6">
+        <a href="#" class="text-white hover:text-blue-800">Terms</a>
+        <a href="#" class="text-white hover:text-blue-800">Privacy</a>
+        <a href="#" class="text-white hover:text-blue-800">Security</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

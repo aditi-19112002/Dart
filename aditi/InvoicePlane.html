@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<!-- saved from url=(0025)https://invoiceplane.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InvoicePlane - An Open Source Invoicing Application - InvoicePlane - An Open Source Invoicing Application</title>
+<meta name="description" content="InvoicePlane is a free and open source application to manage your quotes, invoices, payments and customers.">
+<meta name="keywords" content="invoiceplane, invoicing, invoices, quotes, clients, tasks, projects, payments, PayPal, Stripe, credit card, Bitcoin, billing, open source, software, php, html, css">
+<meta property="og:title" content="InvoicePlane - An Open Source Invoicing Application">
+<meta property="og:description" content="InvoicePlane is a free and open source application to manage your quotes, invoices, payments and customers.">
+<meta property="og:locale" content="en-us">
+<meta property=":images" content="https://invoiceplane.com/content/logo/JPG/logo_1000x1000.jpg">
+<meta property=":images" content="https://invoiceplane.com/content/logo/JPG/logo_500x250.jpg">
+<meta property=":images" content="https://invoiceplane.com/content/mockups/main_preview.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="InvoicePlane - An Open Source Invoicing Application">
+<meta name="twitter:site" content="@InvoicePlane">
+<meta name="twitter:description" content="InvoicePlane is a free and open source application to manage your quotes, invoices, payments and customers.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Over 9000 Thousand!","description":"For those who helped create the Genki Dama"}</script>
+<meta name="google-site-verification" content="">
+<meta name="flattr:id" content="r7ydpy">
+<link rel="icon" type="image/png" href="https://invoiceplane.com/assets/img/logo_64x64.png">
+<link href="./InvoicePlane_files/app.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./InvoicePlane_files/cookieconsent.min.css">
+<script src="./InvoicePlane_files/cookieconsent.min.js.download"></script>
+<script>
+    window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+            "palette": {
+                "popup": {
+                    "background": "#efefef",
+                    "text": "#404040"
+                },
+                "button": {
+                    "background": "transparent",
+                    "text": "#8ec760",
+                    "border": "#8ec760"
+                }
+            },
+            "type": "opt-in",
+            "content": {
+                "message": "By continuing to browse or by clicking \"Allow Cookies\", you agree to the storing of first- and third-party cookies on your device to enhance site navigation and analyze site usage.",
+                "dismiss": "Dismiss",
+                "allow": "Allow Cookies",
+                "link": "Read the Privacy Policy",
+                "href": "https://invoiceplane.com/privacy"
+            },
+            onInitialise: function (status) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && !didConsent) {
+                    _paq.push(['disableCookies']);
+                }
+            },
+            onStatusChange: function(status, chosenBefore) {
+                var type = this.options.type;
+                var didConsent = this.hasConsented();
+                if (type == 'opt-in' && !didConsent) {
+                    _paq.push(['disableCookies']);
+                }
+            },
+        })
+    });
+</script>
+<style></style></head>
+<body class="frontpage"><div class="cc-revoke cc-bottom cc-animate cc-color-override-2104694695 " style="display: none;">Cookie Policy</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-opt-in cc-theme-block cc-bottom cc-color-override-2104694695 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">By continuing to browse or by clicking "Allow Cookies", you agree to the storing of first- and third-party cookies on your device to enhance site navigation and analyze site usage. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://invoiceplane.com/privacy" target="_blank">Read the Privacy Policy</a></span><div class="cc-compliance cc-highlight"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Dismiss</a><a aria-label="allow cookies" role="button" tabindex="0" class="cc-btn cc-allow">Allow Cookies</a></div><!--googleon: all--></div>
+<div id="top">
+<nav class="navbar fixed-top shadow navbar-expand-lg navbar-dark bg-primary">
+<div class="container">
+<button class="navbar-toggler nav-link pull-right" type="button" data-toggle="collapse" data-target="#ip-navbar-collapse" aria-controls="ip-navbar-collapse" aria-expanded="false" aria-label="Menu">
+Menu <i class="fa fa-bars fa-ml"></i>
+</button>
+<div class="collapse navbar-collapse" id="ip-navbar-collapse">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a class="nav-link" href="https://invoiceplane.com/">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://invoiceplane.com/about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link disabled" href="https://invoiceplane.com/">Demo</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://invoiceplane.com/downloads">Downloads</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="https://invoiceplane.com/#" id="ip-nav-dropdown-support" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Support </a>
+<div class="dropdown-menu" aria-labelledby="ip-nav-dropdown-support">
+<a class="dropdown-item" href="https://invoiceplane.com/support">Get Help</a>
+<a class="dropdown-item" href="https://wiki.invoiceplane.com/">Wiki &amp; FAQ</a>
+<a class="dropdown-item" href="https://invoiceplane.com/translations">Translations</a>
+</div>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="https://invoiceplane.com/#" id="ip-nav-dropdown-community" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Community </a>
+<div class="dropdown-menu" aria-labelledby="ip-nav-dropdown-community">
+<a class="dropdown-item" href="https://community.invoiceplane.com/">
+Community Forums </a>
+<a class="dropdown-item" href="https://join.slack.com/t/invoiceplane/shared_invite/zt-sjirc9h2-952baR9rn4r8LyzRK9MveA">
+Slack Chat </a>
+<a class="dropdown-item" href="https://invoiceplane.com/development">
+Help Developing </a>
+<a class="dropdown-item disabled" href="https://invoiceplane.com/roadmap">
+Roadmap </a>
+<a class="dropdown-item" href="https://github.com/InvoicePlane/InvoicePlane/issues">
+Issue Tracker </a>
+<a class="dropdown-item" href="https://github.com/InvoicePlane/InvoicePlane">
+GitHub Repository </a>
+</div>
+</li>
+</ul>
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a href="https://invoiceplane.com/download/v1.6.0" class="nav-link" id="dnl_ip" onclick="_paq.push([&#39;trackGoal&#39;, 1]);">
+<i class="fa fa-download fa-mr"></i> v1.6.0
+</a>
+</li>
+<li class="nav-item">
+<a href="https://invoiceplane.com/download/v1.6.1-beta-2" class="nav-link" id="dnl_ip" onclick="_paq.push([&#39;trackGoal&#39;, 1]);">
+<i class="fa fa-download fa-mr"></i> v1.6.1-beta-2
+</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="wrapper wrapper-bg wrapper-home">
+<div class="container container-large">
+<h1 class="logo">
+<img src="./InvoicePlane_files/logo.svg" alt="InvoicePlane">
+</h1>
+</div>
+</div>
+<div class="wrapper">
+<div class="container pb-0">
+<div class="box box-primary box-teaser box-centered">
+<p><b>InvoicePlane</b> is a self-hosted open source application for managing your quotes, invoices, clients and payments.</p>
+Downloaded more than 100.000 times from 193 countries. </div>
+</div>
+</div>
+<div class="wrapper">
+<div class="container container-large container-teaser">
+<div class="teaser">
+<img src="./InvoicePlane_files/preview.jpg" alt="Preview for InvoicePlane">
+</div>
+<div id="features" class="inner">
+<div class="row justify-content-center mb-3">
+<div class="box col-sm-6 text-center">
+<i class="fa fa-4x fa-dollar text-primary mb-3"></i>
+<h3>Quotes, Invoices, Payments</h3>
+<p>InvoicePlane is a solid application to manage your complete billing circle: from <b>quotes</b> over <b>invoices</b> to <b>payments</b>.</p>
+</div>
+<div class="box col-sm-6 text-center">
+<i class="fa fa-4x fa-users text-primary mb-3"></i>
+<h3>Manage your Clients</h3>
+<p>The application provides CRM-like management for your clients. Enter contact details, notes or add custom fields. Basic project and task management is also available.</p>
+</div>
+</div>
+<div class="row justify-content-center mb-3">
+<div class="box col-sm-6 text-center">
+<i class="fa fa-4x fa-cogs text-primary mb-3"></i>
+<h3>Customize InvoicePlane</h3>
+<p>You can customize InvoicePlane to make sure it fits your needs: select from <b>different themes</b>, set amount formats, modify <b>email and PDF templates</b> or many more.</p>
+</div>
+<div class="box col-sm-6 text-center">
+<i class="fa fa-4x fa-credit-card text-primary mb-3"></i>
+<h3>One-Click Online Payments</h3>
+<p>Let your clients pay the invoices by using one of 25 different online payment providers like <b>PayPal</b>, <b>Stripe</b> or even using <b>Bitcoin</b> via Coinbase.</p>
+</div>
+</div>
+<div class="row justify-content-center mb-3">
+<div class="box col-sm-6 text-center">
+<i class="fa fa-4x fa-globe text-primary mb-3"></i>
+<h3>Multilanguage Interface</h3>
+<p>InvoicePlane is translated into many languages by community members and more languages are coming soon.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper cta">
+<div class="container">
+<div class="box box-lg text-center">
+<h4 class="mb-5">Ready to use InvoicePlane?</h4>
+<h5 class="mb-4">Download for your Server</h5>
+<div class="row justify-content-center align-items-center mb-5">
+<div class="col col-lg-4 mb-3">
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#dnl_modal_v1">
+<i class="fa fa-download fa-mr"></i> v1.6.0
+</button>
+<br>
+<small class="text-muted">
+13,280 Downloads </small>
+</div>
+<div class="col col-lg-4 mb-3">
+<button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#dnl_modal_vbeta">
+<i class="fa fa-download fa-mr"></i> v1.6.1-beta-2
+</button>
+<br>
+<small class="text-muted">
+2,223 Downloads </small>
+</div>
+</div>
+<div class="row justify-content-center align-items-center">
+<div class="col-xs-12 col-sm-4 mb-3">
+<h5 class="mb-0">View hosting solutions:</h5>
+</div>
+<div class="col-xs-12 col-sm-4 mb-3">
+<a href="https://invoiceplane.com/hosting" class="btn btn-outline-primary btn-lg">
+<i class="fa fa-cloud fa-mr"></i> Hosting solutions </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="container">
+<h2 class="home-headline text-center">What our Users say</h2>
+<div class="testimonials card-deck">
+<div class="testimonial card">
+<div class="card-body">
+InvoicePlane takes the pain out of invoicing. We highly recommend it for anyone doing freelance work or
+for sending simple invoices and getting paid quickly and securely via Paypal.[...]
+</div>
+<div class="small card-footer bg-transparent">
+Frank Horbelt<br>Southern Boy Teas
+</div>
+</div>
+<div class="testimonial card">
+<div class="card-body">
+We are a little italian company. Personally think that invoiceplane is the best open source invoicing
+project. It help us daily to best manage our business, free!
+</div>
+<div class="small card-footer bg-transparent">
+Roberto Gargiulo<br>Parlanet Srls
+</div>
+</div>
+<div class="testimonial card">
+<div class="card-body">
+Thanks to the Invoice plane team to come up with a application, which satisfies the invoicing related
+prerequisite . Simple to utilize. I am as of now recommitting this application to my companions.
+</div>
+<div class="small card-footer bg-transparent">
+Roushan Kumar<br>&nbsp;
+</div>
+</div>
+<div class="testimonial card">
+<div class="card-body">
+InvoicePlane is exactly what I've been looking for! I was very happy to have more control over my
+invoicing and to stop paying Freshbooks.
+</div>
+<div class="small card-footer bg-transparent">
+Jesse Clark<br>Geared Up Design
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="container">
+<div class="sponsors">
+<h3 class="home-headline text-center mb-5">InvoicePlane is sponsored by</h3>
+<div class="row justify-content-around">
+<div class="col-xs-12 col-md-4 col-lg-3 single-logo text-center mb-5">
+<a href="http://www.rapidweb.co.nz/?utm_source=invoiceplane" target="_blank" class="d-block mb-4">
+<img src="./InvoicePlane_files/logo_rapidweb.svg" alt="Rapidweb" class="ip-sponsor-logo">
+</a>
+<small>Operated in New Zealand, Rapidweb is your one-stop cloud solutions provider</small>
+</div>
+<div class="col-xs-12 col-md-4 col-lg-3 single-logo text-center mb-5">
+<a href="https://devnco.fr/?utm_source=invoiceplane" target="_blank" class="d-block mb-4">
+<img src="./InvoicePlane_files/logo_devnco.svg" alt="DEVNCO" class="ip-sponsor-logo">
+</a>
+<small>Website development, web applications, hosting and advice with personalized support</small>
+</div>
+<div class="col-xs-12 col-md-4 col-lg-3 single-logo text-center">
+<a href="https://kovah.de/?utm_source=invoiceplane" target="_blank" class="d-block mb-4">
+<img src="./InvoicePlane_files/logo_kovah.svg" alt="Kovah.de" class="ip-sponsor-logo">
+</a>
+<small>Web Development and Photography from Berlin, Germany</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper">
+<div class="container">
+<h3 class="home-headline text-center">Follow InvoicePlane</h3>
+<div class="row justify-content-around text-center">
+<div class="col mb-3">
+<a href="https://twitter.com/invoiceplane" title="Twitter">
+<i class="fa fa-twitter fa-fw fa-2x"></i><span class="hidden">Twitter</span>
+</a>
+</div>
+<div class="col mb-3">
+<a href="https://www.reddit.com/r/invoiceplane/" title="Reddit">
+<i class="fa fa-reddit fa-fw fa-2x"></i><span class="hidden">Reddit</span>
+</a>
+</div>
+<div class="col mb-3">
+<a href="https://go.invoiceplane.com/newsletter" title="Newsletter">
+<i class="fa fa-send fa-fw fa-2x"></i><span class="hidden">Newsletter</span>
+</a>
+</div>
+<div class="col">
+<a href="https://www.facebook.com/InvoicePlane" title="Facebook">
+<i class="fa fa-facebook fa-fw fa-2x"></i><span class="hidden">Facebook</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper wrapper-primary">
+<div class="container">
+<h3 class="home-headline text-center">Donate for InvoicePlane</h3>
+<div class="donation-buttons center-margin text-center">
+<div class="btn-group btn-group-lg btn-group-vertical mb-4">
+<a class="dbox-donation-button btn btn-outline-light" href="https://donorbox.org/invoiceplane-project-support">
+PayPal / Stripe / Bank Transfer
+</a>
+<a href="https://opencollective.com/invoiceplane" class="btn btn-outline-light">
+OpenCollective
+</a>
+<a href="https://invoiceplane.com/donations" class="btn btn-outline-light">
+Other Methods </a>
+</div>
+<script src="./InvoicePlane_files/install-popup-button.js.download" type="text/javascript" defer=""></script>
+<div>
+<a href="https://invoiceplane.com/donations" class="btn btn-outline-light">
+Recent Donations </a>
+</div>
+</div>
+<br>
+<p class="text-center small">InvoicePlane is a free software nonetheless we have several expenses.<br>Please donate to support us.</p>
+</div>
+</div>
+<div class="wrapper">
+<div class="container">
+<div id="footer" class="text-muted">
+<div class="mb-3">
+</div>
+<div class="row justify-content-between">
+<div class="col-xs-12 col-md-2 mb-3">
+<a href="https://invoiceplane.com/#top"><i class="fa fa-caret-up"></i> Top</a>
+</div>
+<div class="col-xs-12 col-md-6 text-right">
+© 2013-2023 <a href="https://invoiceplane.com/">InvoicePlane.com</a>
+<br>
+<a href="https://invoiceplane.com/contact">Contact</a>
+| <a href="https://invoiceplane.com/media">Media</a>
+| <a href="https://invoiceplane.com/license-copyright">License &amp; Copyright</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="dnl_modal_v1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Please notice</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<p>InvoicePlane is not a commercial product.<br>It is developed in our free time, as a hobby. We do your best to fulfill any legal requirements but we cannot make sure that the app is working 100% correct for your particular business.<br>We neither offer 24/7 support nor any form of SLA or paid help. All support is provided by the community.</p>
+<div class="text-center mt-5 mb-4">
+<a href="https://invoiceplane.com/download/v1.6.0" class="btn btn-success btn-lg" id="dnl_ip" onclick="_paq.push([&#39;trackGoal&#39;, 1]);">
+<i class="fa fa-download fa-mr"></i> Download v1.6.0 now </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="dnl_modal_vbeta" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Please notice</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<p>InvoicePlane is not a commercial product.<br>It is developed in our free time, as a hobby. We do your best to fulfill any legal requirements but we cannot make sure that the app is working 100% correct for your particular business.<br>We neither offer 24/7 support nor any form of SLA or paid help. All support is provided by the community.</p>
+<div class="text-center mt-5 mb-4">
+<a href="https://invoiceplane.com/download/v1.6.1-beta-2" class="btn btn-warning btn-lg" id="dnl_ip" onclick="_paq.push([&#39;trackGoal&#39;, 1]);">
+<i class="fa fa-download fa-mr"></i> Download v1.6.1-beta-2 now </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="./InvoicePlane_files/dependencies.js.download"></script>
+<script src="./InvoicePlane_files/app.js.download"></script>
+
+</body></html>

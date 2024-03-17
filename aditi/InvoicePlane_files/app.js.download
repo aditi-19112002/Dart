@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".table-sortable").tablesorter({headers:{1:{sorter:!1}}})});
